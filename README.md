@@ -1,18 +1,18 @@
 # IRCTC Mini System - Backend
 
-[cite_start]A simplified version of the IRCTC backend that supports user registration, authentication, train search, and booking[cite: 3].
+A simplified version of the IRCTC backend that supports user registration, authentication, train search, and booking.
 
 ## Tech Stack
-- [cite_start]**Backend:** Django / Django REST Framework (DRF) [cite: 6]
-- [cite_start]**Primary Database:** MySQL (Main transactional data: users, trains, bookings) [cite: 8]
-- [cite_start]**Log Database:** MongoDB (API logs and analytics) [cite: 9]
-- [cite_start]**Authentication:** JWT-based [cite: 10]
+- **Backend:** Django / Django REST Framework (DRF)
+- **Primary Database:** MySQL (Main transactional data: users, trains, bookings)
+- **Log Database:** MongoDB (API logs and analytics)
+- **Authentication:** JWT-based
 
 ## Features
-- [cite_start]**Authentication APIs:** Register and Login with email/password to receive JWT tokens[cite: 12, 13].
-- [cite_start]**Train APIs:** Search trains between stations and an Admin-only endpoint to create or update train details[cite: 16, 19].
-- [cite_start]**Booking APIs:** Seat booking with availability validation and seat deduction[cite: 21].
-- [cite_start]**Analytics API:** Aggregate MongoDB logs to return the top 5 most searched routes[cite: 24, 25].
+- **Authentication APIs:** Register and Login with email/password to receive JWT tokens.
+- **Train APIs:** Search trains between stations and an Admin-only endpoint to create or update train details.
+- **Booking APIs:** Seat booking with availability validation and seat deduction.
+- **Analytics API:** Aggregate MongoDB logs to return the top 5 most searched routes.
 
 ## Setup Instructions
 
