@@ -1,19 +1,18 @@
-# IRCTC Mini System - Backend Intern Assignment
+# IRCTC Mini System - Backend
 
-[cite_start]A simplified version of the IRCTC backend that supports user registration, authentication, train management, search, and booking[cite: 3].
+[cite_start]A simplified version of the IRCTC backend that supports user registration, authentication, train search, and booking[cite: 3].
 
-## [cite_start]Tech Stack [cite: 5]
+## Tech Stack
 - [cite_start]**Backend:** Django / Django REST Framework (DRF) [cite: 6]
-- [cite_start]**Primary Database:** MySQL (Transactional data: users, trains, bookings) [cite: 8]
+- [cite_start]**Primary Database:** MySQL (Main transactional data: users, trains, bookings) [cite: 8]
 - [cite_start]**Log Database:** MongoDB (API logs and analytics) [cite: 9]
-- [cite_start]**Authentication:** JWT-based (JSON Web Tokens) [cite: 10]
+- [cite_start]**Authentication:** JWT-based [cite: 10]
 
 ## Features
-- [cite_start]**Authentication:** User registration and login with JWT[cite: 12, 13].
-- [cite_start]**Train Management:** Admin-only API to create or update train details.
-- [cite_start]**Train Search:** Search trains between stations with real-time logging to MongoDB[cite: 16, 18].
-- [cite_start]**Booking System:** Seat availability validation and atomic seat deduction.
-- [cite_start]**Analytics:** Aggregate MongoDB logs to find top searched routes.
+- [cite_start]**Authentication APIs:** Register and Login with email/password to receive JWT tokens[cite: 12, 13].
+- [cite_start]**Train APIs:** Search trains between stations and an Admin-only endpoint to create or update train details[cite: 16, 19].
+- [cite_start]**Booking APIs:** Seat booking with availability validation and seat deduction[cite: 21].
+- [cite_start]**Analytics API:** Aggregate MongoDB logs to return the top 5 most searched routes[cite: 24, 25].
 
 ## Setup Instructions
 
@@ -22,7 +21,7 @@
 - MySQL Server
 - MongoDB Server
 
-### 2. Environment Setup
+### 2. Installation
 ```bash
 # Clone the repository
 git clone [https://github.com/Suhanii7/irctc-backend-intern-assignment.git](https://github.com/Suhanii7/irctc-backend-intern-assignment.git)
@@ -36,4 +35,4 @@ python -m venv venv
 source venv/bin/activate
 
 # Install dependencies
-pip install -r requirements.txt
+pip install django djangorestframework djangorestframework-simplejwt mysql-connector-python pymongo python-dotenv
